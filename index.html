@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Pagina de Prueba</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <button id="button_1">Press me</button>
+    <h3 id="texto"></h3>
+    
+    <script>
+        const button1 = document.querySelector('#button_1');
+        const texto1 = document.querySelector('#texto');
+
+        button1.onclick = function() {
+            alert('Hello ' + prompt('What is your name?') + ', nice to see you!');
+            texto1.textContent = 'Welcome ' + prompt('What is your name?');
+        }
+
+    </script>
+</body>
+</html>
